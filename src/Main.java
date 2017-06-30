@@ -19,25 +19,26 @@ public class Main {
     mostrarlos por pantalla.
     Por último, indicar cuál de los 2 tiene más páginas.*/
 
-        Libro libro_1 = new Libro();
-        libro_1.setAutor("Edguar Poo");
+        Libro libro_1 = new Libro(54345532, "El Cuervo","Edguar Poo",354 );
+
+       /* libro_1.setAutor("Edguar Poo");
         libro_1.setISBN(54345532);
         libro_1.setTitulo("El Cuervo");
-        libro_1.setNum_de_pag(354);
+        libro_1.setNum_de_pag(354);*/
 
         System.out.println(libro_1);
 
-        Libro libro_2 = new Libro();
-        libro_2.setAutor("Harry Poter");
+        Libro libro_2 = new Libro(54463432,"Las Reliquias De La Muerte","Harry Potter", 344);
+        /*libro_2.setAutor("Harry Poter");
         libro_2.setISBN(54463432);
         libro_2.setTitulo("Las Reliquias De La Muerte");
-        libro_2.setNum_de_pag(344);
+        libro_2.setNum_de_pag(344);*/
 
         System.out.println(libro_2);
         if (libro_1.getNum_de_pag()>libro_2.getNum_de_pag()){
-            System.out.println("El libro " + libro_1 + "tiene mas pag");
+            System.out.println("El libro " + libro_1.getTitulo() + " tiene mas pag");
         }else{
-            System.out.println("El libro " + libro_2 + "tiene mas pag");
+            System.out.println("El libro " + libro_2.getTitulo() + " tiene mas pag");
         }
     }
 }
