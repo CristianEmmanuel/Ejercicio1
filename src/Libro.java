@@ -8,6 +8,13 @@ public class Libro {
     private String autor;
     private int num_de_pag;
 
+    public Libro(int ISBN, String titulo, String autor, int num_de_pag) {
+        this.ISBN = ISBN;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.num_de_pag = num_de_pag;
+    }
+
     public int getISBN() {
         return ISBN;
     }
